@@ -34,7 +34,6 @@ namespace WpfApp1
             }
         }
 
-        // команда открытия файла
         private RelayCommand openCommand;
         public RelayCommand OpenCommand
         {
@@ -61,7 +60,6 @@ namespace WpfApp1
                   }));
             }
         }
-        // команда добавления нового объекта
         private RelayCommand addCommand;
         public RelayCommand AddCommand
         {

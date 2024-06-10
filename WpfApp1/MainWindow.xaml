@@ -31,8 +31,8 @@
         </Grid.RowDefinitions>
         <Menu Grid.ColumnSpan="2" >
             <MenuItem Header="Файл">
-                <MenuItem Header="Открыть" Command="{Binding OpenCommand}" />
-                <MenuItem Header="Сохранить" Command="{Binding SaveCommand}" />
+                <MenuItem Header="Open" Command="{Binding OpenCommand}" />
+                <MenuItem Header="Save" Command="{Binding SaveCommand}" />
             </MenuItem>
         </Menu>
         <!--outbound binding from SelectedItem to SelectedPhone-->
@@ -62,12 +62,12 @@
 
         <!--incoming binding from SelectedPhone to DataContext-->
         <StackPanel Grid.Row="1" Grid.Column="1" DataContext="{Binding SelectedPhone}">
-            <TextBlock Text="Выбранный элемент" />
+            <TextBlock Text="Selected item" />
             <TextBlock Text="Модель" />
             <TextBox Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}" />
-            <TextBlock Text="Производитель" />
+            <TextBlock Text="Manufacturer" />
             <TextBox Text="{Binding Company, UpdateSourceTrigger=PropertyChanged}" />
-            <TextBlock Text="Цена" />
+            <TextBlock Text="Price" />
             <TextBox Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}" />
         </StackPanel>
     </Grid>
